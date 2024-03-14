@@ -224,3 +224,14 @@ Thu 14 Mar 2024 02:48:27 PM UTC:
  tests:  0|6
 total_score: 10/70
 fa65d50
+Thu 14 Mar 2024 02:56:15 PM UTC: 
+ exercises.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:21:10: error: ‘temp’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   21 |   return temp; }
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7c7f392
