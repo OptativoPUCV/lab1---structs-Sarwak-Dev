@@ -263,3 +263,20 @@ exercises.c:50:8: error: unused variable ‘newArr’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 901fb5e
+Thu 14 Mar 2024 03:15:50 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   54 |     if (arr[i] % 2 == 0)
+      |     ^~
+exercises.c:56:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   56 |       *newSize++;
+      |       ^
+exercises.c:56:7: error: value computed is not used [-Werror=unused-value]
+   56 |       *newSize++;
+      |       ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b46aa0b
