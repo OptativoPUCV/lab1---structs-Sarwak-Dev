@@ -235,3 +235,14 @@ exercises.c:21:10: error: ‘temp’ may be used uninitialized in this function 
 cc1: all warnings being treated as errors
 Compilation failed
 7c7f392
+Thu 14 Mar 2024 02:57:08 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:21:10: error: ‘temp’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   21 |   return temp;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2f13ade
