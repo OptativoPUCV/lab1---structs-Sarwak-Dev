@@ -280,3 +280,17 @@ exercises.c:56:7: error: value computed is not used [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 b46aa0b
+Thu 14 Mar 2024 03:15:57 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   54 |     if (arr[i] % 2 == 0)
+      |     ^~
+exercises.c:56:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   56 |       newSize++;
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2d00c82
