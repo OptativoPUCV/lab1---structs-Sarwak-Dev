@@ -160,47 +160,13 @@ Puedes guiarte con lo que vimos en las clases (diapos).
   */
 
 typedef struct nodo {
-    int numero;
-    struct nodo *siguiente; // puntero al siguiente nodo
+  int numero;
+  struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) {
-    // Inicializamos el puntero al primer nodo de la lista
-    Nodo *inicio = NULL;
-    // Variable para mantener el puntero al último nodo agregado
-    Nodo *ultimo = NULL;
-
-    // Recorremos el arreglo y creamos un nodo para cada elemento
-    for (int i = 0; i < size; i++) {
-        // Creamos un nuevo nodo
-        Nodo *nuevoNodo = (Nodo *)malloc(sizeof(Nodo));
-        if (nuevoNodo == NULL) {
-            // Manejo de error: si malloc falla, liberar memoria y salir
-            Nodo *actual = inicio;
-            while (actual != NULL) {
-                Nodo *temp = actual;
-                actual = actual->siguiente;
-                free(temp);
-            }
-            return NULL;
-        }
-
-        // Asignamos el valor del arreglo al nodo
-        nuevoNodo->numero = arr[i];
-        // El siguiente del nuevo nodo será NULL, ya que es el último por ahora
-        nuevoNodo->siguiente = NULL;
-
-        // Si es el primer nodo, establecemos inicio
-        if (inicio == NULL) {
-            inicio = nuevoNodo;
-        } else {
-            // Si no es el primer nodo, enlazamos el último nodo con el nuevo
-            ultimo->siguiente = nuevoNodo;
-        }
-        // Actualizamos el último nodo agregado
-        ultimo = nuevoNodo;
-    }
-
-    // Devolvemos el puntero al primer nodo de la lista
-    return inicio;
+Nodo *crearListaEnlazada(int arr[], int size) { 
+  
+  
+  
+  return NULL; 
 }
