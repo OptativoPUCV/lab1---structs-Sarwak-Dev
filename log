@@ -334,3 +334,9 @@ exercises.c:87:9: error: ‘else’ without a previous ‘if’
 cc1: all warnings being treated as errors
 Compilation failed
 989edd2
+Sat 16 Mar 2024 02:19:46 AM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+ tests:  0|4
+total_score: 30/70
+56f9688
