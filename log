@@ -372,3 +372,17 @@ Sat 16 Mar 2024 02:26:07 AM UTC:
  1 file changed, 8 insertions(+), 6 deletions(-)
  tests:  0|0
 0018aba
+Sat 16 Mar 2024 02:27:24 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:78:16: error: statement with no effect [-Werror=unused-value]
+   78 |           count+2;
+      |           ~~~~~^~
+exercises.c:84:16: error: statement with no effect [-Werror=unused-value]
+   84 |           count+2;
+      |           ~~~~~^~
+cc1: all warnings being treated as errors
+Compilation failed
+29ed338
