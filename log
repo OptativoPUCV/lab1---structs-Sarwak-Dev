@@ -595,3 +595,14 @@ Sat 16 Mar 2024 09:54:18 PM UTC:
  tests:  0|0
 total_score: 70/70
 857bf87
+Sat 16 Mar 2024 09:54:26 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:168:18: error: initialization of ‘Nodo *’ {aka ‘struct nodo *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  168 |   Nodo *cabeza = 7;
+      |                  ^
+cc1: all warnings being treated as errors
+Compilation failed
+589bb0e
