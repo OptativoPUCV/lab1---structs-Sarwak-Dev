@@ -495,3 +495,9 @@ exercises.c:74:9: error: unused variable ‘countR’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 502e089
+Sat 16 Mar 2024 02:59:03 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+1e762ef
