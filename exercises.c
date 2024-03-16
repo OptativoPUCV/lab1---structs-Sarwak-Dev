@@ -106,7 +106,7 @@ int checkSorted(int arr[], int size) {
     }
   }
 
-  if (asc == 1 && dec == 1)
+  if (asc == 0 && dec == 0)
     return 0;
 
   else if (asc == 1)
