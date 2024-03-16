@@ -606,3 +606,8 @@ exercises.c:168:18: error: initialization of ‘Nodo *’ {aka ‘struct nodo *�
 cc1: all warnings being treated as errors
 Compilation failed
 589bb0e
+Sat 16 Mar 2024 09:55:11 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+3608fdd
