@@ -68,20 +68,36 @@ ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
+    int i = 0, j = 0, k = 0;
 
-  int count = 0;
-  
-    for (int i = 0; i < (size1 + size2); i++) {
-        if (arr1[i] > arr2[i]) {
-          result[count] = arr2[i];
-          result[count+1] = arr1[i];
-          count+=2;
+    // Fusionar los dos arreglos ordenados en uno solo
+    while (i < size1 && j < size2) {
+        if (arr1[i] < arr2[j]) {
+            result[k++] = arr1[i++];
+        } else {
+            result[k++] = arr2[j++];
         }
+    }
 
-        else {
-          result[count] = arr1[i];
-          result[count+1] = arr2[i];
-          count+=2;
+    // Agregar los elementos restantes del primer arreglo, si hay alguno
+    while (i < size1) {
+        result[k++] = arr1[i++];
+    }
+
+    // Agregar los elementos restantes del segundo arreglo, si hay alguno
+    while (j < size2) {
+        result[k++] = arr2[j++];
+    }
+
+    // Ordenar el arreglo resultante de menor a mayor (se usa bubble sort para simplicidad)
+    for (int x = 0; x < k - 1; x++) {
+        for (int y = 0; y < k - x - 1; y++) {
+            if (result[y] > result[y + 1]) {
+                // Intercambiar los elementos si no están ordenados
+                int temp = result[y];
+                result[y] = result[y + 1];
+                result[y + 1] = temp;
+            }
         }
     }
 }
