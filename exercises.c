@@ -174,6 +174,5 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     cabeza = nuevoNodo;
   }
   
-  
-  return cabeza + 1; 
+  return cabeza; 
 }
