@@ -79,6 +79,11 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
         }
     }
 
+    // Agregar los elementos restantes del primer arreglo, si hay alguno
+    while (i < size1) {
+        result[k++] = arr1[i++];
+    }
+
     
 }
 
