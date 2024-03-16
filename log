@@ -317,3 +317,20 @@ Sat 16 Mar 2024 02:18:30 AM UTC:
  tests:  0|4
 total_score: 30/70
 0c5dbe7
+Sat 16 Mar 2024 02:19:22 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:83:9: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   83 |         if (arr1[i] > arr2[i])
+      |         ^~
+exercises.c:85:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   85 |           result[i+1] = arr1[i];
+      |           ^~~~~~
+exercises.c:87:9: error: ‘else’ without a previous ‘if’
+   87 |         else
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+989edd2
