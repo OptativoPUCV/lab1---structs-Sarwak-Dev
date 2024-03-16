@@ -79,27 +79,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
         }
     }
 
-    // Agregar los elementos restantes del primer arreglo, si hay alguno
-    while (i < size1) {
-        result[k++] = arr1[i++];
-    }
-
-    // Agregar los elementos restantes del segundo arreglo, si hay alguno
-    while (j < size2) {
-        result[k++] = arr2[j++];
-    }
-
-    // Ordenar el arreglo resultante de menor a mayor (se usa bubble sort para simplicidad)
-    for (int x = 0; x < k - 1; x++) {
-        for (int y = 0; y < k - x - 1; y++) {
-            if (result[y] > result[y + 1]) {
-                // Intercambiar los elementos si no están ordenados
-                int temp = result[y];
-                result[y] = result[y + 1];
-                result[y + 1] = temp;
-            }
-        }
-    }
+    
 }
 
 /*
