@@ -169,7 +169,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
 
   for (int i = 1; i < size; i++) {
     Nodo *nuevoNodo = (Nodo *)malloc(sizeof(Nodo));
-    nuevoNodo->numero = arr[size - i];
+    nuevoNodo->numero = arr[i];
     nuevoNodo->siguiente = cabeza;
     cabeza = nuevoNodo;
   }
