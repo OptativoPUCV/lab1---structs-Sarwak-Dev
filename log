@@ -340,3 +340,14 @@ Sat 16 Mar 2024 02:19:46 AM UTC:
  tests:  0|4
 total_score: 30/70
 56f9688
+Sat 16 Mar 2024 02:20:34 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:73:9: error: variable ‘mayor’ set but not used [-Werror=unused-but-set-variable]
+   73 |     int mayor;
+      |         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+699a0a8
