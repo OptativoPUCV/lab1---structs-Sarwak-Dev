@@ -501,3 +501,14 @@ Sat 16 Mar 2024 02:59:03 AM UTC:
  tests:  0|2
 total_score: 50/70
 1e762ef
+Sat 16 Mar 2024 02:59:26 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:77:28: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+   77 |         if (count1 < size1 && count2 >= size2 || arr1[count1] < arr2[count2]) {
+      |             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+27c6abe
