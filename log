@@ -351,3 +351,8 @@ exercises.c:73:9: error: variable ‘mayor’ set but not used [-Werror=unused-b
 cc1: all warnings being treated as errors
 Compilation failed
 699a0a8
+Sat 16 Mar 2024 02:20:50 AM UTC: 
+ exercises.c | 9 ---------
+ 1 file changed, 9 deletions(-)
+ tests:  0|0
+5133e8e
